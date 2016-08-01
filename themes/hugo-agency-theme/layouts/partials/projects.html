@@ -1,0 +1,69 @@
+{{ "<!-- projects Grid Section -->" | safeHTML }}
+<section id="projects" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{ with .Site.Params.projects.title }}{{ . | markdownify }}{{ end }}</h2>
+                <h3 class="section-subheading text-muted">{{ with .Site.Params.projects.subtitle }}{{ . | markdownify }}{{ end }}</h3>
+            </div>
+        </div>
+        <div class="row" >
+          <div class="projects-images" >
+
+            <img class="img-responsive" src="img/projects/java.svg" alt="Java" title="Java" >
+            <img class="img-responsive" src="img/projects/python.svg" alt="Python" title="Python">
+            <img class="img-responsive" src="img/projects/ruby.svg" alt="Ruby" title="Ruby">
+            <img class="img-responsive" src="img/projects/html5.svg" alt="HTML5" title="HTML5">
+            <img class="img-responsive" src="img/projects/css3.svg" alt="CSS3" title="CSS3">
+            <img class="img-responsive" src="img/projects/javascript_1.svg" alt="JavaScript" title="JavaScript">
+            <img class="img-responsive" src="img/projects/jquery_logo.svg" alt="JQuery" title="JQuery">
+            <img class="img-responsive" src="img/projects/ror.svg" alt="Ruby on Rails" title="Ruby on Rails">
+            <img class="img-responsive" src="img/projects/mysql.svg" alt="MySQL" title="MySQL">
+            <img class="img-responsive" src="img/projects/bootstrap.svg" alt="Bootstrap" title="Bootstrap">
+            <img class="img-responsive" src="img/projects/eclipse.svg" alt="Eclipse" title="Eclipse">
+            <img class="img-responsive" src="img/projects/netbeans.svg" alt="Net Beans" title="Net Beans">
+            <img class="img-responsive" src="img/projects/git.svg" alt="GIT" title="GIT">
+            <img class="img-responsive" src="img/projects/github.svg" alt="GitHub" title="GitHub">
+            <img class="img-responsive" src="img/projects/heroku.svg" alt="Heroku" title="Heroku">
+            <img class="img-responsive" src="img/projects/bitbucket.svg" alt="Bit Buckets" title="Bit Buckets">
+            <img class="img-responsive" src="img/projects/linux.svg" alt="Linux" title="Linux">
+            <img class="img-responsive" src="img/projects/postgresql.svg" alt="Postgresql" title="Postgresql">
+            <img class="img-responsive" src="img/projects/sublime.svg" alt="Sublime" title="Sublime">
+            <img class="img-responsive" src="img/projects/atom.svg" alt="Atom" title="Atom">
+            <img class="img-responsive" src="img/projects/brackets.svg" alt="Brackets" title="Brackets">
+            <img class="img-responsive" src="img/projects/matlab.svg" alt="Matlab" title="Matlab" width="80px" height="80px;">
+            <img class="img-responsive" src="img/projects/ns2.png" alt="Network Simulator 2" title="Network Simulator 2" width="180px" height="180px;">
+          </div>
+                  <!-- {{ range .Site.Params.projects.row }}
+                  <div class="row text-center">
+                      {{ range .list }}
+                      <div class="col-md-3">
+                          <div class="timeline-image">
+                            <img class="img-responsive" src="img/projects/{{ .img }}" alt="">
+                          </div>
+                          <h4 class="service-heading">{{ .title | markdownify }}</h4>
+                          <p class="text-muted">{{ .description | markdownify }}</p>
+                      </div>
+                      {{ end }}
+                  </div>
+                  {{ end }} -->
+
+            <!-- {{ range .Site.Data.projects }}
+            <div class="col-md-4 col-sm-6 projects-item">
+                <a href="#projectsModal{{ .modalID }}" class="projects-link" data-toggle="modal">
+                    <div class="projects-hover">
+                        <div class="projects-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/projects/{{ .preview }}" class="img-responsive" alt="">
+                </a>
+                <div class="projects-caption">
+                    <h4>{{ .title | markdownify }}</h4>
+                    <p class="text-muted">{{ .category | markdownify }}</p>
+                </div>
+            </div>
+            {{ end }} -->
+        </div>
+    </div>
+</section>
