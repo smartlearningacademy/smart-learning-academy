@@ -257,9 +257,9 @@ googleAnalytics = ""
 	[params.footer]
         enable = true
 		# copyright1 = "Published under the Apache License 2.0."
-		copyright1 = "Address : "
+		copyright1 = "Address : C- 4 Bora Planet, Near Sai Chowk, Jagtap Dairy , Pune, MH, India 411027"
 		copyright2 = "Email : smartlearningacademy.mailus@gmail.com"
-		copyright3 = "Mobile no : "
+		copyright3 = "Mobile no : +917776954543"
 
 # 		[[params.footer.social]]
 # 			icon = "fa-twitter"

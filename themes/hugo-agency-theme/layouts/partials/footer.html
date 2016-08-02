@@ -2,10 +2,10 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <span class="copyright">{{ with .Site.Params.footer.copyright1 }}{{ . | markdownify }}{{ end }}</span></br>
-                <span class="copyright">{{ with .Site.Params.footer.copyright2 }}{{ . | markdownify }}{{ end }}</span></br>
-                <span class="copyright">{{ with .Site.Params.footer.copyright3 }}{{ . | markdownify }}{{ end }}</span></br>
+            <div class="col-md-7">
+                <span class="copyright "><span class="glyphicon glyphicon-home"> &nbsp;</span>{{ with .Site.Params.footer.copyright1 }}{{ . | markdownify }}{{ end }}</span></br>
+                <span class="copyright"><span class="glyphicon glyphicon-envelope"> &nbsp;</span>{{ with .Site.Params.footer.copyright2 }}{{ . | markdownify }}{{ end }}</span></br>
+                <span class="copyright "><span class="glyphicon glyphicon-earphone"> &nbsp;  </span>{{ with .Site.Params.footer.copyright3 }}{{ . | markdownify }}{{ end }}</span></br>
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
